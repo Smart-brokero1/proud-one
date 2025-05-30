@@ -122,7 +122,7 @@ const InvestmentSect = ({
             <div className="unitOffer">
               <h3>SILVER</h3>
               <h4>
-                <span>$50</span> <br /> - <br /> <span>$900</span>
+                <span>$500</span> <br /> - <br /> <span>$900</span>
               </h4>
               <ul>
                 <li>
@@ -140,7 +140,7 @@ const InvestmentSect = ({
               <button
                 className="borderBtn"
                 onClick={() => {
-                  investProcess("Silver", 50, 2);
+                  investProcess("Silver", 500, 2);
                 }}
               >
                 Invest

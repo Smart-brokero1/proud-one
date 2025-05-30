@@ -123,28 +123,6 @@ const Signup = () => {
       });
   }, []);
 
-  // Define sendEmail function using EmailJS
-  const sendEmail = () => {
-    emailjs
-      .send(
-        "service_u2puuza", // Service ID
-        "template_qy0y7zs", // Template ID
-        {
-          user_name: toLocaleStorage.name,
-          user_email: toLocaleStorage.email,
-          account_creation_date: dateString, // Example additional variable
-          // Add any other variables your template requires
-        },
-        "h_ipB59D78PCkVFhn" // Public Key
-      )
-      .then(() => {
-        console.log("Email sent successfully!");
-      })
-      .catch((error) => {
-        console.error("Email sending failed:", error);
-      });
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const alreadyExist = users.find(
@@ -166,8 +144,7 @@ const Signup = () => {
         await addDoc(colRef, { ...toLocaleStorage });
         // Fetch and set active user
         getSingleDoc();
-        // Send email
-        sendEmail();
+
         // Reset form
         e.target.reset();
         setVerify("Default");
