@@ -296,7 +296,7 @@ export default function Home() {
               <div className="unitOffer">
                 <h3>SILVER</h3>
                 <h4>
-                  <span>$500</span> <br /> - <br /> <span>$900</span>
+                  <span>$1000</span> <br /> - <br /> <span>$900</span>
                 </h4>
                 <ul>
                   <li>

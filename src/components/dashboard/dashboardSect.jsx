@@ -51,7 +51,7 @@ const DashboardSect = ({ setWidgetState, currentUser, setInvestData }) => {
           <div className="unitOffer">
             <h3>SILVER</h3>
             <h4>
-              <span>$500</span> <br /> - <br /> <span>$900</span>
+              <span>$1000</span> <br /> - <br /> <span>$900</span>
             </h4>
             <ul>
               <li>
@@ -69,7 +69,7 @@ const DashboardSect = ({ setWidgetState, currentUser, setInvestData }) => {
             <button
               className="borderBtn"
               onClick={() => {
-                investProcess("Silver", 500, 2);
+                investProcess("Silver", 1000, 2);
               }}
             >
               Invest
