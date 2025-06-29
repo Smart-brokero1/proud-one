@@ -99,7 +99,7 @@ const NotificationSect = ({
             <div className="unitOffer">
               <h3>SILVER</h3>
               <h4>
-                <span>$1000</span> <br /> - <br /> <span>$900</span>
+                <span>$500</span> <br /> - <br /> <span>$900</span>
               </h4>
               <ul>
                 <li>
@@ -117,7 +117,7 @@ const NotificationSect = ({
               <button
                 className="borderBtn"
                 onClick={() => {
-                  investProcess("Silver", 1000, 2);
+                  investProcess("Silver", 500, 2);
                 }}
               >
                 Invest
