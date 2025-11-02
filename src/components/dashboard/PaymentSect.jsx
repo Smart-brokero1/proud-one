@@ -77,7 +77,7 @@ const PaymentSect = ({ setProfileState, investData }) => {
       <button
         className="financeBtn"
         onClick={() => {
-          window.open("https://wa.me/14436165012", "_blank");
+          window.open("mailto:everrgreenfinance@gmail.com", "_blank");
         }}
       >
         Finance Department
