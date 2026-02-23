@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }) {
           </Head>
           <div>
             <a
-              href="https://wa.me/14436165012"
+              href="https://t.me/Mr_SHAKERULLAHABDUL_RAHIM1"
               target="_blank"
               rel="noopener noreferrer"
               id="absWa"
