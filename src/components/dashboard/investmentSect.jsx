@@ -70,8 +70,8 @@ const InvestmentSect = ({
                           elem?.status === "Pending"
                             ? "#F9F871"
                             : elem?.status === "Expired"
-                            ? "#DC1262"
-                            : "#2DC194"
+                              ? "#DC1262"
+                              : "#2DC194"
                         }`,
                       }}
                     >
@@ -82,27 +82,27 @@ const InvestmentSect = ({
                     {elem?.status === "Pending"
                       ? "0"
                       : elem?.status === "Expired"
-                      ? "0"
-                      : `${
-                          Math.floor(
-                            (new Date(dateString) - new Date(elem?.date)) /
-                              (1000 * 60 * 60 * 24)
-                          ) + 1
-                        }`}
+                        ? "0"
+                        : `${
+                            Math.floor(
+                              (new Date(dateString) - new Date(elem?.date)) /
+                                (1000 * 60 * 60 * 24),
+                            ) + 1
+                          }`}
                   </div>
                   <div className="unitheadsect">
                     {elem?.status === "Pending"
                       ? `${elem?.duration}`
                       : elem?.status === "Expired"
-                      ? "0"
-                      : `${
-                          elem?.duration -
-                          (Math.floor(
-                            (new Date(dateString) - new Date(elem?.date)) /
-                              (1000 * 60 * 60 * 24)
-                          ) +
-                            1)
-                        }`}
+                        ? "0"
+                        : `${
+                            elem?.duration -
+                            (Math.floor(
+                              (new Date(dateString) - new Date(elem?.date)) /
+                                (1000 * 60 * 60 * 24),
+                            ) +
+                              1)
+                          }`}
                   </div>
                 </div>
               ))}
@@ -122,7 +122,7 @@ const InvestmentSect = ({
             <div className="unitOffer">
               <h3>SILVER</h3>
               <h4>
-                <span>$500</span> <br /> - <br /> <span>$900</span>
+                <span>$100</span> <br /> - <br /> <span>$300</span>
               </h4>
               <ul>
                 <li>
@@ -140,7 +140,7 @@ const InvestmentSect = ({
               <button
                 className="borderBtn"
                 onClick={() => {
-                  investProcess("Silver", 500, 2);
+                  investProcess("Silver", 100, 2);
                 }}
               >
                 Invest
@@ -151,7 +151,7 @@ const InvestmentSect = ({
                 DIAMOND <i className="icofont-diamond"></i>
               </h3>
               <h4>
-                <span>$10,000</span> <br /> - <br /> <span>$100,000</span>
+                <span>$800</span> <br /> - <br /> <span>$1,000</span>
               </h4>
               <ul>
                 <li>
@@ -173,7 +173,7 @@ const InvestmentSect = ({
               <button
                 className="fancyBtn"
                 onClick={() => {
-                  investProcess("Diamond", 10000, 7);
+                  investProcess("Diamond", 800, 7);
                 }}
               >
                 Get Rich
@@ -182,7 +182,7 @@ const InvestmentSect = ({
             <div className="unitOffer">
               <h3>GOLD</h3>
               <h4>
-                <span>$1,000</span> <br /> - <br /> <span>$9,000</span>
+                <span>$400</span> <br /> - <br /> <span>$700</span>
               </h4>
               <ul>
                 <li>
@@ -204,7 +204,7 @@ const InvestmentSect = ({
               <button
                 className="borderBtn"
                 onClick={() => {
-                  investProcess("Gold", 1000, 5);
+                  investProcess("Gold", 400, 5);
                 }}
               >
                 Invest

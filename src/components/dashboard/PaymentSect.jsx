@@ -36,8 +36,8 @@ const PaymentSect = ({ setProfileState, investData }) => {
         investData.plan === "Silver"
           ? investData.capital * 5
           : investData.plan === "Gold"
-          ? investData.capital * 8
-          : investData.capital * 10,
+            ? investData.capital * 8
+            : investData.capital * 10,
     });
     setProfileState("Investments");
   };
@@ -77,7 +77,7 @@ const PaymentSect = ({ setProfileState, investData }) => {
       <button
         className="financeBtn"
         onClick={() => {
-          window.open("mailto:everrgreenfinance@gmail.com", "_blank");
+          window.open("https://t.me/Mr_SHAKERULLAHABDUL_RAHIM1", "_blank");
         }}
       >
         Finance Department

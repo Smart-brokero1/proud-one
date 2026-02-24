@@ -82,7 +82,7 @@ const WithdrawalPayment = ({
       <button
         className="financeBtn"
         onClick={() => {
-          window.open("mailto:everrgreenfinance@gmail.com", "_blank");
+          window.open("https://t.me/Mr_SHAKERULLAHABDUL_RAHIM1", "_blank");
         }}
       >
         Finance Department

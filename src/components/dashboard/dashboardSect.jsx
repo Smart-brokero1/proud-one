@@ -51,7 +51,7 @@ const DashboardSect = ({ setWidgetState, currentUser, setInvestData }) => {
           <div className="unitOffer">
             <h3>SILVER</h3>
             <h4>
-              <span>$500</span> <br /> - <br /> <span>$900</span>
+              <span>$100</span> <br /> - <br /> <span>$300</span>
             </h4>
             <ul>
               <li>
@@ -69,7 +69,7 @@ const DashboardSect = ({ setWidgetState, currentUser, setInvestData }) => {
             <button
               className="borderBtn"
               onClick={() => {
-                investProcess("Silver", 500, 2);
+                investProcess("Silver", 100, 2);
               }}
             >
               Invest
@@ -80,7 +80,7 @@ const DashboardSect = ({ setWidgetState, currentUser, setInvestData }) => {
               DIAMOND <i className="icofont-diamond"></i>
             </h3>
             <h4>
-              <span>$10,000</span> <br /> - <br /> <span>$100,000</span>
+              <span>$800</span> <br /> - <br /> <span>$1,000</span>
             </h4>
             <ul>
               <li>
@@ -102,7 +102,7 @@ const DashboardSect = ({ setWidgetState, currentUser, setInvestData }) => {
             <button
               className="fancyBtn"
               onClick={() => {
-                investProcess("Diamond", 10000, 7);
+                investProcess("Diamond", 800, 7);
               }}
             >
               Get Rich
@@ -111,7 +111,7 @@ const DashboardSect = ({ setWidgetState, currentUser, setInvestData }) => {
           <div className="unitOffer">
             <h3>GOLD</h3>
             <h4>
-              <span>$1,000</span> <br /> - <br /> <span>$9,000</span>
+              <span>$400</span> <br /> - <br /> <span>$700</span>
             </h4>
             <ul>
               <li>
@@ -133,7 +133,7 @@ const DashboardSect = ({ setWidgetState, currentUser, setInvestData }) => {
             <button
               className="borderBtn"
               onClick={() => {
-                investProcess("Gold", 1000, 5);
+                investProcess("Gold", 400, 5);
               }}
             >
               Invest
